@@ -1,1 +1,16 @@
-
+stages:
+  collect_data:
+    cmd: collect_data_dvc.py
+    params:
+      - keys
+    outs:
+    dataa
+  
+  get_model:
+    params:
+      - n_stages
+    cmd: python get_model_dvc.py
+    outs:
+    - thetaa
+    - accuracy
+  
