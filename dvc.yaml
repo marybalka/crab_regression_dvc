@@ -8,7 +8,7 @@ stages:
   
   get_model:
     params:
-      - n_stages
+      - n_steps
     cmd: python get_model_dvc.py
     outs:
     - thetaa
